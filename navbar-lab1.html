@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab1 with HTML and CSS</title>
+        <style>
+            header{
+                background-color: rgba(255, 0, 0, 0.87);
+                color:black;
+                text-align:end;
+                padding: 16px;
+                font-size: x-large;
+                font-weight: bolder;
+            }
+            
+            .navbar{
+                overflow: hidden;
+                background-color: grey;
+            }
+
+            .navbar a{
+                float: left;
+            
+                color: wheat;
+                padding: 14px 16px;
+                font-size: 16px;
+                text-decoration: none;
+            }
+
+            .dropdown{
+                float: left;
+                overflow: hidden;
+            }
+
+            .dropdown .dropbtn{
+                font-size: 16px;
+                background-color: inherit;
+                font-family: inherit;
+                color: wheat;
+                border: none;
+                padding: 14px 16px;
+               
+
+            }
+
+            .navbar a:hover, .dropdown:hover, .dropbtn{
+                background-color: black;
+
+            }
+
+            .drop-content{
+                display: none;
+                position: absolute;
+                background-color: rgb(188, 206, 240);
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                z-index: 1;
+            }
+
+            .drop-content a{
+                float: none;
+                display: block;
+                color: royalblue;
+                padding: 12px 16px;
+                text-decoration: none;
+                text-align: left;
+            }
+
+            .dropdown:hover .drop-content{
+                display: block;
+            }
+
+            .drop-content a:hover{
+                background-color: beige;
+            }
+        </style>
+    </head>
+    <body>
+        <header>Demo of Dropdown</header>
+        <div class = "navbar">
+            <a href ="#">Link 1</a>     
+            <div class = "dropdown">
+                <button class = "dropbtn">Link 2</button>
+                <div class = "drop-content">
+                    <a href="#">DD_Link1</a>
+                    <a href="#">DD_Link2</a>
+                    <a href="#">DD_Link3</a>
+                </div>
+            </div>
+            <div class = "dropdown">
+                <button class="dropbtn">Link 3</button>
+                <div class = "drop-content">
+                    <a href="#">DD_Link1</a>
+                    <a href="#">DD_Link2</a>
+                    <a href="#">DD_Link3</a>
+                </div>
+            </div>    
+        </div>
+    </body>
+</html>
